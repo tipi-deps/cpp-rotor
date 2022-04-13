@@ -1,0 +1,27 @@
+{
+	"x": [
+		"src/rotor/ev**",
+		"include/rotor/ev**",
+		"src/rotor/wx**",
+		"include/rotor/wx**",
+		"examples/ev**",
+		"examples/wx**",
+		"examples/ping-pong-ev_and_asio.cpp",
+		"examples/boost-asio/beast-scrapper.cpp",
+		"tests/*wx*",
+		"tests/*ev*"
+	],
+	"requires": {
+		"platform": [ "Boost::+boost" ],
+		"platform:gcc-7-cxx17" : [ "OpenSSL::+Crypto" ],
+		"platform:clang-cxx17" : [ "OpenSSL::+Crypto" ],
+		"platform:vs-15-2017-win64-cxx17" : [ "OpenSSL::+Crypto" ],
+		"platform:vs-16-2019-win64-cxx17" : [ "OpenSSL::+Crypto" ],
+		"platform:linux" : [ "BoringSSL::+crypto" ],
+		"platform:linux-cxx17" : [ "BoringSSL::+crypto" ],
+		"platform:macos" : [ "BoringSSL::+crypto" ],
+		"platform:macos-cxx17" : [ "BoringSSL::+crypto" ],
+		"platform:windows" : [ "BoringSSL::+crypto", "target::crypt32" ],
+		"platform:windows-cxx17" : [ "BoringSSL::+crypto", "target::crypt32" ]
+	}
+}
